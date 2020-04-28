@@ -13,7 +13,7 @@ namespace TrainSet
 			get { return false; }
 		}
 
-		public List<RollingStock> GetWholeTrain()
+		public List<RollingStock> GetRollingStocks()
 		{
 			throw new NotImplementedException();
 		}
@@ -38,6 +38,11 @@ namespace TrainSet
 			throw new NotImplementedException();
 		}
 
+		public decimal horsePowerRequired()
+		{
+			throw new NotImplementedException();
+		}
+
 		//Tarkastaa onko junissa vaunua.
 		public bool HasCars
 		{
@@ -50,5 +55,12 @@ namespace TrainSet
 			get { return false; }
 		}
 
+		public int TestiProperty
+		{
+			get => default;
+			set
+			{
+			}
+		}
 	}
 }

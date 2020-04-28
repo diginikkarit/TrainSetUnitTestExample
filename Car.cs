@@ -6,7 +6,8 @@ namespace TrainSet
 {
     public class Car:RollingStock
     {
-        public decimal horsePowerRequired = 0;
+        //this is hp needed to move this car when it is empty.
+        public decimal horsePowerRequiredEmptyCar = 0;
 
         public Car()
         {
@@ -16,7 +17,13 @@ namespace TrainSet
         public Car(string name, decimal requiredPower)
         {
             this.name = name;
-            this.horsePowerRequired = requiredPower;
+            this.horsePowerRequiredEmptyCar = requiredPower;
+        }
+
+        public decimal CalculaterequiredHorsePower()
+        {
+                throw new NotImplementedException();
+           
         }
     }
 }
